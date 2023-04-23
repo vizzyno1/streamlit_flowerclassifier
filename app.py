@@ -19,7 +19,7 @@ from sklearn.metrics import r2_score, mean_absolute_error
 
 st.title('Stock Price Predictions')
 st.sidebar.info('Welcome to the Stock Price Prediction App. Choose your options below')
-st.sidebar.info("Created and designed by [Jonaben](https://www.linkedin.com/in/jonathan-ben-okah-7b507725b)")
+st.sidebar.info("Created and designed by [Vijayant] (https://www.linkedin.com/in/vijayantkumarbansal)")
 
 def main():
     option = st.sidebar.selectbox('Make a choice', ['Visualize','Recent Data', 'Predict'])
@@ -115,7 +115,8 @@ def predict():
             model_engine(engine, num)
         elif model == 'RandomForestRegressor':
             engine = RandomForestRegressor()
-            model_engine(engine, num)
+            model_engine(engine, 
+                         num)
         elif model == 'ExtraTreesRegressor':
             engine = ExtraTreesRegressor()
             model_engine(engine, num)
